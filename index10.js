@@ -140,7 +140,7 @@ const personalPlanPeter = {
     }
 };
 
-personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
 
 function showExperience(plan) {
     const {exp} = plan.skills;
@@ -161,3 +161,57 @@ function showProgrammingLangs(plan) {
     return(result);
 }
 // showProgrammingLangs(plan);
+
+const family = [];
+
+function showFamily(arr) {
+    if(arr.length == 0)return "Семья пуста";
+    let result = "Семья состоит из: ";
+    for(let key of family){
+        
+        result+=`${key} `
+    }
+    console.log(result);
+}   
+showFamily(family);
+const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+    for(let key of arr){
+
+        console.log(`${key.toLowerCase()}`);
+    }
+    
+    arr.forEach(function(item){
+        
+        console.log(`${item.toLowerCase()}`);
+    });
+}
+
+// standardizeStrings(favoriteCities);
+
+
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+    let res = str.split("").reverse().join("");
+    // let size = 1;
+    // for(let i = 0; i< str.length; i++){
+    //     res+= str[i+str.length-size]; 
+    //     size+=2;
+    //     // console.log(size);
+    //     // console.log(str[i+str.length-2]);
+    // }
+    // str = res;
+    console.log(res);
+}
+
+reverse(someString);
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    
+}
